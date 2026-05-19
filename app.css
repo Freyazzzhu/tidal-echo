@@ -344,8 +344,13 @@ p {
   height: 100dvh;
   min-height: 0;
   overflow: hidden;
-  padding-bottom: max(14px, env(safe-area-inset-bottom));
+  padding-bottom: max(34px, env(safe-area-inset-bottom));
   padding-top: max(14px, env(safe-area-inset-top));
+}
+
+.pattern-screen .bottom-actions {
+  margin-bottom: 26px;
+  margin-top: 0;
 }
 
 .look-up-zone {
