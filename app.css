@@ -340,33 +340,39 @@ p {
 }
 
 .pattern-screen {
-  gap: 6px;
+  gap: 8px;
   height: 100dvh;
   min-height: 0;
-  overflow-y: auto;
-  padding-bottom: max(18px, env(safe-area-inset-bottom));
-  padding-top: max(12px, env(safe-area-inset-top));
+  overflow: hidden;
+  padding-bottom: 112px;
+  padding-top: max(14px, env(safe-area-inset-top));
+  position: relative;
 }
 
 .pattern-screen .bottom-actions {
+  bottom: max(44px, env(safe-area-inset-bottom));
+  left: 22px;
   margin-bottom: 0;
   margin-top: 0;
+  position: absolute;
+  right: 22px;
   transform: none;
 }
 
 .look-up-zone {
   align-items: center;
   display: flex;
-  flex: 0 0 112px;
+  flex: 0 0 148px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 0;
+  padding-bottom: 12px;
   text-align: center;
 }
 
 .look-up-zone h3 {
   animation: breatheText 3s ease-in-out infinite;
-  font-size: 38px;
+  font-size: 44px;
   font-weight: 300;
   line-height: 1;
 }
@@ -385,7 +391,7 @@ p {
 .pattern-preview {
   align-items: center;
   display: flex;
-  flex: 0 0 122px;
+  flex: 0 0 136px;
   flex-direction: column;
   justify-content: center;
   min-height: 0;
@@ -413,8 +419,8 @@ p {
 }
 
 .canvas-wrap.small-preview {
-  height: 104px;
-  width: 104px;
+  height: 112px;
+  width: 112px;
 }
 
 .canvas-wrap.complete {
@@ -458,7 +464,7 @@ p {
 .pattern-instrument-stage {
   align-items: center;
   display: grid;
-  flex: 0 0 184px;
+  flex: 0 0 220px;
   gap: 8px;
   grid-template-columns: 42px 1fr 42px;
   justify-items: center;
@@ -471,11 +477,11 @@ p {
   border: 0;
   cursor: pointer;
   display: flex;
-  height: 178px;
+  height: 206px;
   justify-content: center;
   padding: 0;
   position: relative;
-  width: 178px;
+  width: 206px;
 }
 
 .pattern-instrument-hit.locked {
@@ -483,10 +489,10 @@ p {
 }
 
 .pattern-instrument-hit img {
-  max-height: 172px;
+  max-height: 196px;
   object-fit: contain;
   position: relative;
-  width: 172px;
+  width: 196px;
   z-index: 2;
 }
 
