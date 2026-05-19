@@ -349,8 +349,9 @@ p {
 }
 
 .pattern-screen .bottom-actions {
-  margin-bottom: 26px;
+  margin-bottom: 0;
   margin-top: 0;
+  transform: translateY(-78px);
 }
 
 .look-up-zone {
